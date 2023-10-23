@@ -1,0 +1,657 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="DentalClinicModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Appointment">
+          <Key>
+            <PropertyRef Name="Id_Appointment" />
+          </Key>
+          <Property Name="Id_Appointment" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Satuts" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Price" Type="float" Nullable="false" />
+          <Property Name="Date" Type="date" Nullable="false" />
+          <Property Name="Time" Type="time" Precision="7" Nullable="false" />
+          <Property Name="Recp_SSN" Type="char" MaxLength="14" />
+          <Property Name="patient_Id" Type="int" />
+          <Property Name="Doc_SSN" Type="char" MaxLength="14" />
+          <Property Name="IsValid" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Diagnosis">
+          <Key>
+            <PropertyRef Name="Diagnosis_Id" />
+          </Key>
+          <Property Name="patient_Id" Type="int" />
+          <Property Name="Id_Appointment" Type="int" />
+          <Property Name="Description_Diagnosis" Type="nvarchar(max)" />
+          <Property Name="Diagnosis_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Doctor">
+          <Key>
+            <PropertyRef Name="Doc_SSN" />
+          </Key>
+          <Property Name="Doc_SSN" Type="char" MaxLength="14" Nullable="false" />
+          <Property Name="FName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Phone" Type="char" MaxLength="11" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="SSN_User" Type="varchar" MaxLength="14" />
+        </EntityType>
+        <EntityType Name="Patient">
+          <Key>
+            <PropertyRef Name="patient_Id" />
+          </Key>
+          <Property Name="patient_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Age" Type="int" Nullable="false" />
+          <Property Name="Phone" Type="char" MaxLength="11" Nullable="false" />
+          <Property Name="Address" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Gender" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="PatientTeeth">
+          <Key>
+            <PropertyRef Name="PatientTeeth_ID" />
+          </Key>
+          <Property Name="PatientTeeth_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="patient_Id" Type="int" />
+          <Property Name="NumberTooth" Type="int" />
+          <Property Name="Diagnosis" Type="nvarchar(max)" />
+          <Property Name="ImageTooth" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="Receptionist">
+          <Key>
+            <PropertyRef Name="Recp_SSN" />
+          </Key>
+          <Property Name="Recp_SSN" Type="char" MaxLength="14" Nullable="false" />
+          <Property Name="FName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Phone" Type="char" MaxLength="11" Nullable="false" />
+          <Property Name="Address" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Salary" Type="float" Nullable="false" />
+          <Property Name="HireDate" Type="date" Nullable="false" />
+          <Property Name="SSN_User" Type="varchar" MaxLength="14" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="Teeth">
+          <Key>
+            <PropertyRef Name="NumberTooth" />
+          </Key>
+          <Property Name="NumberTooth" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Image" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="users">
+          <Key>
+            <PropertyRef Name="SSN_User" />
+          </Key>
+          <Property Name="SSN_User" Type="varchar" MaxLength="14" Nullable="false" />
+          <Property Name="PasswordHash" Type="nvarchar" MaxLength="255" />
+          <Property Name="Role" Type="varchar" MaxLength="50" />
+          <Property Name="IsLogin" Type="bit" />
+        </EntityType>
+        <Association Name="Appoint_Doc_sSN_Fk">
+          <End Role="Doctor" Type="Self.Doctor" Multiplicity="0..1" />
+          <End Role="Appointment" Type="Self.Appointment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Doctor">
+              <PropertyRef Name="Doc_SSN" />
+            </Principal>
+            <Dependent Role="Appointment">
+              <PropertyRef Name="Doc_SSN" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Appoint_patient_Id_Fk">
+          <End Role="Patient" Type="Self.Patient" Multiplicity="0..1" />
+          <End Role="Appointment" Type="Self.Appointment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patient">
+              <PropertyRef Name="patient_Id" />
+            </Principal>
+            <Dependent Role="Appointment">
+              <PropertyRef Name="patient_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Appoint_Resp_SSN_Fk">
+          <End Role="Receptionist" Type="Self.Receptionist" Multiplicity="0..1" />
+          <End Role="Appointment" Type="Self.Appointment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Receptionist">
+              <PropertyRef Name="Recp_SSN" />
+            </Principal>
+            <Dependent Role="Appointment">
+              <PropertyRef Name="Recp_SSN" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Diagnosis_Id_Appointment_Fk">
+          <End Role="Appointment" Type="Self.Appointment" Multiplicity="0..1" />
+          <End Role="Diagnosis" Type="Self.Diagnosis" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Appointment">
+              <PropertyRef Name="Id_Appointment" />
+            </Principal>
+            <Dependent Role="Diagnosis">
+              <PropertyRef Name="Id_Appointment" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Diagnosis_patient_Id_Fk">
+          <End Role="Patient" Type="Self.Patient" Multiplicity="0..1" />
+          <End Role="Diagnosis" Type="Self.Diagnosis" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patient">
+              <PropertyRef Name="patient_Id" />
+            </Principal>
+            <Dependent Role="Diagnosis">
+              <PropertyRef Name="patient_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="NumberTooth_patient_Id">
+          <End Role="Patient" Type="Self.Patient" Multiplicity="0..1" />
+          <End Role="PatientTeeth" Type="Self.PatientTeeth" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patient">
+              <PropertyRef Name="patient_Id" />
+            </Principal>
+            <Dependent Role="PatientTeeth">
+              <PropertyRef Name="patient_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="NumberTooth_PatientTeeth">
+          <End Role="Teeth" Type="Self.Teeth" Multiplicity="0..1" />
+          <End Role="PatientTeeth" Type="Self.PatientTeeth" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Teeth">
+              <PropertyRef Name="NumberTooth" />
+            </Principal>
+            <Dependent Role="PatientTeeth">
+              <PropertyRef Name="NumberTooth" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="SSN_User_Doc_FK">
+          <End Role="users" Type="Self.users" Multiplicity="0..1" />
+          <End Role="Doctor" Type="Self.Doctor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="users">
+              <PropertyRef Name="SSN_User" />
+            </Principal>
+            <Dependent Role="Doctor">
+              <PropertyRef Name="SSN_User" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="SSN_User_Recp_FK">
+          <End Role="users" Type="Self.users" Multiplicity="0..1" />
+          <End Role="Receptionist" Type="Self.Receptionist" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="users">
+              <PropertyRef Name="SSN_User" />
+            </Principal>
+            <Dependent Role="Receptionist">
+              <PropertyRef Name="SSN_User" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DentalClinicModelStoreContainer">
+          <EntitySet Name="Appointment" EntityType="Self.Appointment" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Diagnosis" EntityType="Self.Diagnosis" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Doctor" EntityType="Self.Doctor" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Patient" EntityType="Self.Patient" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PatientTeeth" EntityType="Self.PatientTeeth" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Receptionist" EntityType="Self.Receptionist" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Teeth" EntityType="Self.Teeth" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="users" EntityType="Self.users" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="Appoint_Doc_sSN_Fk" Association="Self.Appoint_Doc_sSN_Fk">
+            <End Role="Doctor" EntitySet="Doctor" />
+            <End Role="Appointment" EntitySet="Appointment" />
+          </AssociationSet>
+          <AssociationSet Name="Appoint_patient_Id_Fk" Association="Self.Appoint_patient_Id_Fk">
+            <End Role="Patient" EntitySet="Patient" />
+            <End Role="Appointment" EntitySet="Appointment" />
+          </AssociationSet>
+          <AssociationSet Name="Appoint_Resp_SSN_Fk" Association="Self.Appoint_Resp_SSN_Fk">
+            <End Role="Receptionist" EntitySet="Receptionist" />
+            <End Role="Appointment" EntitySet="Appointment" />
+          </AssociationSet>
+          <AssociationSet Name="Diagnosis_Id_Appointment_Fk" Association="Self.Diagnosis_Id_Appointment_Fk">
+            <End Role="Appointment" EntitySet="Appointment" />
+            <End Role="Diagnosis" EntitySet="Diagnosis" />
+          </AssociationSet>
+          <AssociationSet Name="Diagnosis_patient_Id_Fk" Association="Self.Diagnosis_patient_Id_Fk">
+            <End Role="Patient" EntitySet="Patient" />
+            <End Role="Diagnosis" EntitySet="Diagnosis" />
+          </AssociationSet>
+          <AssociationSet Name="NumberTooth_patient_Id" Association="Self.NumberTooth_patient_Id">
+            <End Role="Patient" EntitySet="Patient" />
+            <End Role="PatientTeeth" EntitySet="PatientTeeth" />
+          </AssociationSet>
+          <AssociationSet Name="NumberTooth_PatientTeeth" Association="Self.NumberTooth_PatientTeeth">
+            <End Role="Teeth" EntitySet="Teeth" />
+            <End Role="PatientTeeth" EntitySet="PatientTeeth" />
+          </AssociationSet>
+          <AssociationSet Name="SSN_User_Doc_FK" Association="Self.SSN_User_Doc_FK">
+            <End Role="users" EntitySet="users" />
+            <End Role="Doctor" EntitySet="Doctor" />
+          </AssociationSet>
+          <AssociationSet Name="SSN_User_Recp_FK" Association="Self.SSN_User_Recp_FK">
+            <End Role="users" EntitySet="users" />
+            <End Role="Receptionist" EntitySet="Receptionist" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DentalClinicModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Appointment">
+          <Key>
+            <PropertyRef Name="Id_Appointment" />
+          </Key>
+          <Property Name="Id_Appointment" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Satuts" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Price" Type="Double" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Time" Type="Time" Nullable="false" Precision="7" />
+          <Property Name="Recp_SSN" Type="String" MaxLength="14" FixedLength="true" Unicode="false" />
+          <Property Name="patient_Id" Type="Int32" />
+          <Property Name="Doc_SSN" Type="String" MaxLength="14" FixedLength="true" Unicode="false" />
+          <NavigationProperty Name="Doctor" Relationship="Self.Appoint_Doc_sSN_Fk" FromRole="Appointment" ToRole="Doctor" />
+          <NavigationProperty Name="Patient" Relationship="Self.Appoint_patient_Id_Fk" FromRole="Appointment" ToRole="Patient" />
+          <NavigationProperty Name="Receptionist" Relationship="Self.Appoint_Resp_SSN_Fk" FromRole="Appointment" ToRole="Receptionist" />
+          <NavigationProperty Name="Diagnosis" Relationship="DentalClinicModel.Diagnosis_Id_Appointment_Fk" FromRole="Appointment" ToRole="Diagnosi" />
+          <Property Name="IsValid" Type="Boolean" Nullable="false" DefaultValue="false" />
+        </EntityType>
+        <EntityType Name="Doctor">
+          <Key>
+            <PropertyRef Name="Doc_SSN" />
+          </Key>
+          <Property Name="Doc_SSN" Type="String" MaxLength="14" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="FName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Phone" Type="String" MaxLength="11" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SSN_User" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Appointments" Relationship="Self.Appoint_Doc_sSN_Fk" FromRole="Doctor" ToRole="Appointment" />
+          <NavigationProperty Name="user" Relationship="Self.SSN_User_Doc_FK" FromRole="Doctor" ToRole="users" />
+        </EntityType>
+        <EntityType Name="Patient">
+          <Key>
+            <PropertyRef Name="patient_Id" />
+          </Key>
+          <Property Name="patient_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Age" Type="Int32" Nullable="false" />
+          <Property Name="Phone" Type="String" MaxLength="11" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Address" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Gender" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Appointments" Relationship="Self.Appoint_patient_Id_Fk" FromRole="Patient" ToRole="Appointment" />
+          <NavigationProperty Name="PatientTeeth" Relationship="Self.NumberTooth_patient_Id" FromRole="Patient" ToRole="PatientTeeth" />
+          <NavigationProperty Name="Diagnosis" Relationship="DentalClinicModel.Diagnosis_patient_Id_Fk" FromRole="Patient" ToRole="Diagnosi" />
+        </EntityType>
+        <EntityType Name="PatientTooth">
+          <Key>
+            <PropertyRef Name="PatientTeeth_ID" />
+          </Key>
+          <Property Name="PatientTeeth_ID" Type="Int32" Nullable="false" />
+          <Property Name="patient_Id" Type="Int32" />
+          <Property Name="NumberTooth" Type="Int32" />
+          <Property Name="Diagnosis" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ImageTooth" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <NavigationProperty Name="Patient" Relationship="Self.NumberTooth_patient_Id" FromRole="PatientTeeth" ToRole="Patient" />
+          <NavigationProperty Name="Tooth" Relationship="Self.NumberTooth_PatientTeeth" FromRole="PatientTeeth" ToRole="Teeth" />
+        </EntityType>
+        <EntityType Name="Receptionist">
+          <Key>
+            <PropertyRef Name="Recp_SSN" />
+          </Key>
+          <Property Name="Recp_SSN" Type="String" MaxLength="14" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="FName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Phone" Type="String" MaxLength="11" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Address" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Salary" Type="Double" Nullable="false" />
+          <Property Name="HireDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="SSN_User" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Appointments" Relationship="Self.Appoint_Resp_SSN_Fk" FromRole="Receptionist" ToRole="Appointment" />
+          <NavigationProperty Name="user" Relationship="Self.SSN_User_Recp_FK" FromRole="Receptionist" ToRole="users" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Tooth">
+          <Key>
+            <PropertyRef Name="NumberTooth" />
+          </Key>
+          <Property Name="NumberTooth" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <NavigationProperty Name="PatientTeeth" Relationship="Self.NumberTooth_PatientTeeth" FromRole="Teeth" ToRole="PatientTeeth" />
+        </EntityType>
+        <EntityType Name="user">
+          <Key>
+            <PropertyRef Name="SSN_User" />
+          </Key>
+          <Property Name="SSN_User" Type="String" MaxLength="14" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PasswordHash" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Role" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Doctors" Relationship="Self.SSN_User_Doc_FK" FromRole="users" ToRole="Doctor" />
+          <NavigationProperty Name="Receptionists" Relationship="Self.SSN_User_Recp_FK" FromRole="users" ToRole="Receptionist" />
+          <Property Name="IsLogin" Type="Boolean" DefaultValue="false" />
+        </EntityType>
+        <Association Name="Appoint_Doc_sSN_Fk">
+          <End Role="Doctor" Type="Self.Doctor" Multiplicity="0..1" />
+          <End Role="Appointment" Type="Self.Appointment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Doctor">
+              <PropertyRef Name="Doc_SSN" />
+            </Principal>
+            <Dependent Role="Appointment">
+              <PropertyRef Name="Doc_SSN" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Appoint_patient_Id_Fk">
+          <End Role="Patient" Type="Self.Patient" Multiplicity="0..1" />
+          <End Role="Appointment" Type="Self.Appointment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patient">
+              <PropertyRef Name="patient_Id" />
+            </Principal>
+            <Dependent Role="Appointment">
+              <PropertyRef Name="patient_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Appoint_Resp_SSN_Fk">
+          <End Role="Receptionist" Type="Self.Receptionist" Multiplicity="0..1" />
+          <End Role="Appointment" Type="Self.Appointment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Receptionist">
+              <PropertyRef Name="Recp_SSN" />
+            </Principal>
+            <Dependent Role="Appointment">
+              <PropertyRef Name="Recp_SSN" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="SSN_User_Doc_FK">
+          <End Role="users" Type="Self.user" Multiplicity="0..1" />
+          <End Role="Doctor" Type="Self.Doctor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="users">
+              <PropertyRef Name="SSN_User" />
+            </Principal>
+            <Dependent Role="Doctor">
+              <PropertyRef Name="SSN_User" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="NumberTooth_patient_Id">
+          <End Role="Patient" Type="Self.Patient" Multiplicity="0..1" />
+          <End Role="PatientTeeth" Type="Self.PatientTooth" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patient">
+              <PropertyRef Name="patient_Id" />
+            </Principal>
+            <Dependent Role="PatientTeeth">
+              <PropertyRef Name="patient_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="NumberTooth_PatientTeeth">
+          <End Role="Teeth" Type="Self.Tooth" Multiplicity="0..1" />
+          <End Role="PatientTeeth" Type="Self.PatientTooth" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Teeth">
+              <PropertyRef Name="NumberTooth" />
+            </Principal>
+            <Dependent Role="PatientTeeth">
+              <PropertyRef Name="NumberTooth" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="SSN_User_Recp_FK">
+          <End Role="users" Type="Self.user" Multiplicity="0..1" />
+          <End Role="Receptionist" Type="Self.Receptionist" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="users">
+              <PropertyRef Name="SSN_User" />
+            </Principal>
+            <Dependent Role="Receptionist">
+              <PropertyRef Name="SSN_User" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DentalClinicEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Appointments" EntityType="Self.Appointment" />
+          <EntitySet Name="Doctors" EntityType="Self.Doctor" />
+          <EntitySet Name="Patients" EntityType="Self.Patient" />
+          <EntitySet Name="PatientTeeth" EntityType="Self.PatientTooth" />
+          <EntitySet Name="Receptionists" EntityType="Self.Receptionist" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+          <EntitySet Name="Teeth" EntityType="Self.Tooth" />
+          <EntitySet Name="users" EntityType="Self.user" />
+          <AssociationSet Name="Appoint_Doc_sSN_Fk" Association="Self.Appoint_Doc_sSN_Fk">
+            <End Role="Doctor" EntitySet="Doctors" />
+            <End Role="Appointment" EntitySet="Appointments" />
+          </AssociationSet>
+          <AssociationSet Name="Appoint_patient_Id_Fk" Association="Self.Appoint_patient_Id_Fk">
+            <End Role="Patient" EntitySet="Patients" />
+            <End Role="Appointment" EntitySet="Appointments" />
+          </AssociationSet>
+          <AssociationSet Name="Appoint_Resp_SSN_Fk" Association="Self.Appoint_Resp_SSN_Fk">
+            <End Role="Receptionist" EntitySet="Receptionists" />
+            <End Role="Appointment" EntitySet="Appointments" />
+          </AssociationSet>
+          <AssociationSet Name="SSN_User_Doc_FK" Association="Self.SSN_User_Doc_FK">
+            <End Role="users" EntitySet="users" />
+            <End Role="Doctor" EntitySet="Doctors" />
+          </AssociationSet>
+          <AssociationSet Name="NumberTooth_patient_Id" Association="Self.NumberTooth_patient_Id">
+            <End Role="Patient" EntitySet="Patients" />
+            <End Role="PatientTeeth" EntitySet="PatientTeeth" />
+          </AssociationSet>
+          <AssociationSet Name="NumberTooth_PatientTeeth" Association="Self.NumberTooth_PatientTeeth">
+            <End Role="Teeth" EntitySet="Teeth" />
+            <End Role="PatientTeeth" EntitySet="PatientTeeth" />
+          </AssociationSet>
+          <AssociationSet Name="SSN_User_Recp_FK" Association="Self.SSN_User_Recp_FK">
+            <End Role="users" EntitySet="users" />
+            <End Role="Receptionist" EntitySet="Receptionists" />
+          </AssociationSet>
+          <EntitySet Name="Diagnosis" EntityType="DentalClinicModel.Diagnosi" />
+          <AssociationSet Name="Diagnosis_Id_Appointment_Fk" Association="DentalClinicModel.Diagnosis_Id_Appointment_Fk">
+            <End Role="Appointment" EntitySet="Appointments" />
+            <End Role="Diagnosi" EntitySet="Diagnosis" />
+          </AssociationSet>
+          <AssociationSet Name="Diagnosis_patient_Id_Fk" Association="DentalClinicModel.Diagnosis_patient_Id_Fk">
+            <End Role="Patient" EntitySet="Patients" />
+            <End Role="Diagnosi" EntitySet="Diagnosis" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Diagnosi">
+          <Key>
+            <PropertyRef Name="Diagnosis_Id" />
+          </Key>
+          <Property Name="patient_Id" Type="Int32" />
+          <Property Name="Id_Appointment" Type="Int32" />
+          <Property Name="Description_Diagnosis" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Diagnosis_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Appointment" Relationship="DentalClinicModel.Diagnosis_Id_Appointment_Fk" FromRole="Diagnosi" ToRole="Appointment" />
+          <NavigationProperty Name="Patient" Relationship="DentalClinicModel.Diagnosis_patient_Id_Fk" FromRole="Diagnosi" ToRole="Patient" />
+        </EntityType>
+        <Association Name="Diagnosis_Id_Appointment_Fk">
+          <End Type="DentalClinicModel.Appointment" Role="Appointment" Multiplicity="0..1" />
+          <End Type="DentalClinicModel.Diagnosi" Role="Diagnosi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Appointment">
+              <PropertyRef Name="Id_Appointment" />
+            </Principal>
+            <Dependent Role="Diagnosi">
+              <PropertyRef Name="Id_Appointment" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Diagnosis_patient_Id_Fk">
+          <End Type="DentalClinicModel.Patient" Role="Patient" Multiplicity="0..1" />
+          <End Type="DentalClinicModel.Diagnosi" Role="Diagnosi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patient">
+              <PropertyRef Name="patient_Id" />
+            </Principal>
+            <Dependent Role="Diagnosi">
+              <PropertyRef Name="patient_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DentalClinicModelStoreContainer" CdmEntityContainer="DentalClinicEntities">
+          <EntitySetMapping Name="Appointments">
+            <EntityTypeMapping TypeName="DentalClinicModel.Appointment">
+              <MappingFragment StoreEntitySet="Appointment">
+                <ScalarProperty Name="IsValid" ColumnName="IsValid" />
+                <ScalarProperty Name="Id_Appointment" ColumnName="Id_Appointment" />
+                <ScalarProperty Name="Satuts" ColumnName="Satuts" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Time" ColumnName="Time" />
+                <ScalarProperty Name="Recp_SSN" ColumnName="Recp_SSN" />
+                <ScalarProperty Name="patient_Id" ColumnName="patient_Id" />
+                <ScalarProperty Name="Doc_SSN" ColumnName="Doc_SSN" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Doctors">
+            <EntityTypeMapping TypeName="DentalClinicModel.Doctor">
+              <MappingFragment StoreEntitySet="Doctor">
+                <ScalarProperty Name="Doc_SSN" ColumnName="Doc_SSN" />
+                <ScalarProperty Name="FName" ColumnName="FName" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="SSN_User" ColumnName="SSN_User" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Patients">
+            <EntityTypeMapping TypeName="DentalClinicModel.Patient">
+              <MappingFragment StoreEntitySet="Patient">
+                <ScalarProperty Name="patient_Id" ColumnName="patient_Id" />
+                <ScalarProperty Name="FName" ColumnName="FName" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PatientTeeth">
+            <EntityTypeMapping TypeName="DentalClinicModel.PatientTooth">
+              <MappingFragment StoreEntitySet="PatientTeeth">
+                <ScalarProperty Name="PatientTeeth_ID" ColumnName="PatientTeeth_ID" />
+                <ScalarProperty Name="patient_Id" ColumnName="patient_Id" />
+                <ScalarProperty Name="NumberTooth" ColumnName="NumberTooth" />
+                <ScalarProperty Name="Diagnosis" ColumnName="Diagnosis" />
+                <ScalarProperty Name="ImageTooth" ColumnName="ImageTooth" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Receptionists">
+            <EntityTypeMapping TypeName="DentalClinicModel.Receptionist">
+              <MappingFragment StoreEntitySet="Receptionist">
+                <ScalarProperty Name="Recp_SSN" ColumnName="Recp_SSN" />
+                <ScalarProperty Name="FName" ColumnName="FName" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Salary" ColumnName="Salary" />
+                <ScalarProperty Name="HireDate" ColumnName="HireDate" />
+                <ScalarProperty Name="SSN_User" ColumnName="SSN_User" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="DentalClinicModel.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Teeth">
+            <EntityTypeMapping TypeName="DentalClinicModel.Tooth">
+              <MappingFragment StoreEntitySet="Teeth">
+                <ScalarProperty Name="NumberTooth" ColumnName="NumberTooth" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="users">
+            <EntityTypeMapping TypeName="DentalClinicModel.user">
+              <MappingFragment StoreEntitySet="users">
+                <ScalarProperty Name="IsLogin" ColumnName="IsLogin" />
+                <ScalarProperty Name="SSN_User" ColumnName="SSN_User" />
+                <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+                <ScalarProperty Name="Role" ColumnName="Role" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Diagnosis">
+            <EntityTypeMapping TypeName="DentalClinicModel.Diagnosi">
+              <MappingFragment StoreEntitySet="Diagnosis">
+                <ScalarProperty Name="Diagnosis_Id" ColumnName="Diagnosis_Id" />
+                <ScalarProperty Name="Description_Diagnosis" ColumnName="Description_Diagnosis" />
+                <ScalarProperty Name="Id_Appointment" ColumnName="Id_Appointment" />
+                <ScalarProperty Name="patient_Id" ColumnName="patient_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

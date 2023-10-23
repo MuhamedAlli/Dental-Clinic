@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="74062e1e0ffb4039b1c3ee4cd17c7ff3" Name="Diagram1">
+        <EntityTypeShape EntityType="DentalClinicModel.Appointment" Width="1.5" PointX="5.625" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DentalClinicModel.Doctor" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DentalClinicModel.Patient" Width="1.5" PointX="3" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DentalClinicModel.PatientTooth" Width="1.5" PointX="5.25" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DentalClinicModel.Receptionist" Width="1.5" PointX="3" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DentalClinicModel.sysdiagram" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DentalClinicModel.Tooth" Width="1.5" PointX="3" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DentalClinicModel.user" Width="1.5" PointX="0.5" PointY="2.125" IsExpanded="true" />
+        <AssociationConnector Association="DentalClinicModel.Appoint_Doc_sSN_Fk" ManuallyRouted="false" />
+        <AssociationConnector Association="DentalClinicModel.Appoint_patient_Id_Fk" ManuallyRouted="false" />
+        <AssociationConnector Association="DentalClinicModel.Appoint_Resp_SSN_Fk" ManuallyRouted="false" />
+        <AssociationConnector Association="DentalClinicModel.SSN_User_Doc_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="DentalClinicModel.NumberTooth_patient_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="DentalClinicModel.NumberTooth_PatientTeeth" ManuallyRouted="false" />
+        <AssociationConnector Association="DentalClinicModel.SSN_User_Recp_FK" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DentalClinicModel.Diagnosi" Width="1.5" PointX="8" PointY="5.125" />
+        <AssociationConnector Association="DentalClinicModel.Diagnosis_Id_Appointment_Fk" />
+        <AssociationConnector Association="DentalClinicModel.Diagnosis_patient_Id_Fk" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

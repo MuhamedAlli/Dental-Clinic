@@ -1,0 +1,188 @@
+E:\NewProject_WindowApp\DashBoard_Soluation\DashBoard\bin\Debug\DashBoard.exe.config
+E:\NewProject_WindowApp\DashBoard_Soluation\DashBoard\bin\Debug\DashBoard.exe
+E:\NewProject_WindowApp\DashBoard_Soluation\DashBoard\bin\Debug\DashBoard.pdb
+E:\NewProject_WindowApp\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.AssemblyReference.cache
+E:\NewProject_WindowApp\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Form1.resources
+E:\NewProject_WindowApp\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Properties.Resources.resources
+E:\NewProject_WindowApp\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.GenerateResource.cache
+E:\NewProject_WindowApp\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.CoreCompileInputs.cache
+E:\NewProject_WindowApp\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.exe
+E:\NewProject_WindowApp\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.pdb
+E:\NewProject_WindowApp\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.Appointment.resources
+E:\NewProject_WindowApp\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.Patient.resources
+E:\ClinicApps_WindowFormApp\DashBoard_Soluation\DashBoard\bin\Debug\DashBoard.exe.config
+E:\ClinicApps_WindowFormApp\DashBoard_Soluation\DashBoard\bin\Debug\DashBoard.exe
+E:\ClinicApps_WindowFormApp\DashBoard_Soluation\DashBoard\bin\Debug\DashBoard.pdb
+E:\ClinicApps_WindowFormApp\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.AssemblyReference.cache
+E:\ClinicApps_WindowFormApp\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Form1.resources
+E:\ClinicApps_WindowFormApp\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.Patient.resources
+E:\ClinicApps_WindowFormApp\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.Appointment.resources
+E:\ClinicApps_WindowFormApp\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Properties.Resources.resources
+E:\ClinicApps_WindowFormApp\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.GenerateResource.cache
+E:\ClinicApps_WindowFormApp\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.CoreCompileInputs.cache
+E:\ClinicApps_WindowFormApp\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.exe
+E:\ClinicApps_WindowFormApp\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.pdb
+E:\ClinicApps_WindowFormApp\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.Diagnosis.resources
+E:\Project_DisktopTop_29_9_2023\Version_1\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.AssemblyReference.cache
+E:\Project_DisktopTop_29_9_2023\Version_1\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Form1.resources
+E:\Project_DisktopTop_29_9_2023\Version_1\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.Diagnosis.resources
+E:\Project_DisktopTop_29_9_2023\Version_1\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.PatientForm.resources
+E:\Project_DisktopTop_29_9_2023\Version_1\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Properties.Resources.resources
+E:\Project_DisktopTop_29_9_2023\Version_1\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.GenerateResource.cache
+E:\Project_DisktopTop_29_9_2023\Version_1\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.CoreCompileInputs.cache
+E:\Project_DisktopTop_29_9_2023\Version_1\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.exe
+E:\Project_DisktopTop_29_9_2023\Version_1\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.pdb
+E:\Project_DisktopTop_29_9_2023\Version_1\DashBoard_Soluation\DashBoard\bin\Debug\DashBoard.exe.config
+E:\Project_DisktopTop_29_9_2023\Version_1\DashBoard_Soluation\DashBoard\bin\Debug\DashBoard.exe
+E:\Project_DisktopTop_29_9_2023\Version_1\DashBoard_Soluation\DashBoard\bin\Debug\DashBoard.pdb
+E:\Project_DisktopTop_29_9_2023\Version_1\DashBoard_Soluation\DashBoard\bin\Debug\EntityFramework.dll
+E:\Project_DisktopTop_29_9_2023\Version_1\DashBoard_Soluation\DashBoard\bin\Debug\EntityFramework.SqlServer.dll
+E:\Project_DisktopTop_29_9_2023\Version_1\DashBoard_Soluation\DashBoard\bin\Debug\EntityFramework.xml
+E:\Project_DisktopTop_29_9_2023\Version_1\DashBoard_Soluation\DashBoard\bin\Debug\EntityFramework.SqlServer.xml
+E:\Project_DisktopTop_29_9_2023\Version_1\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.CopyComplete
+E:\Project_DisktopTop_29_9_2023\Version_1\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.AppointmentForm.resources
+D:\desktop\Project_DisktopTop_29_9_2023\Version_2\DashBoard_Soluation\DashBoard\bin\Debug\DashBoard.exe.config
+D:\desktop\Project_DisktopTop_29_9_2023\Version_2\DashBoard_Soluation\DashBoard\bin\Debug\DashBoard.exe
+D:\desktop\Project_DisktopTop_29_9_2023\Version_2\DashBoard_Soluation\DashBoard\bin\Debug\DashBoard.pdb
+D:\desktop\Project_DisktopTop_29_9_2023\Version_2\DashBoard_Soluation\DashBoard\bin\Debug\EntityFramework.dll
+D:\desktop\Project_DisktopTop_29_9_2023\Version_2\DashBoard_Soluation\DashBoard\bin\Debug\EntityFramework.SqlServer.dll
+D:\desktop\Project_DisktopTop_29_9_2023\Version_2\DashBoard_Soluation\DashBoard\bin\Debug\EntityFramework.xml
+D:\desktop\Project_DisktopTop_29_9_2023\Version_2\DashBoard_Soluation\DashBoard\bin\Debug\EntityFramework.SqlServer.xml
+D:\desktop\Project_DisktopTop_29_9_2023\Version_2\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.AssemblyReference.cache
+D:\desktop\Project_DisktopTop_29_9_2023\Version_2\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.SuggestedBindingRedirects.cache
+D:\desktop\Project_DisktopTop_29_9_2023\Version_2\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Form1.resources
+D:\desktop\Project_DisktopTop_29_9_2023\Version_2\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.PatientForm.resources
+D:\desktop\Project_DisktopTop_29_9_2023\Version_2\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.AppointmentForm.resources
+D:\desktop\Project_DisktopTop_29_9_2023\Version_2\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Properties.Resources.resources
+D:\desktop\Project_DisktopTop_29_9_2023\Version_2\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.GenerateResource.cache
+D:\desktop\Project_DisktopTop_29_9_2023\Version_2\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.CoreCompileInputs.cache
+D:\desktop\Project_DisktopTop_29_9_2023\Version_2\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.CopyComplete
+D:\desktop\Project_DisktopTop_29_9_2023\Version_2\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.exe
+D:\desktop\Project_DisktopTop_29_9_2023\Version_2\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.pdb
+D:\desktop\Project_DisktopTop_29_9_2023\Version_2\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.DiagnosisForm.resources
+E:\DentalClininc_V2\Version_2\DashBoard_Soluation\DashBoard\bin\Debug\DashBoard.exe.config
+E:\DentalClininc_V2\Version_2\DashBoard_Soluation\DashBoard\bin\Debug\DashBoard.exe
+E:\DentalClininc_V2\Version_2\DashBoard_Soluation\DashBoard\bin\Debug\DashBoard.pdb
+E:\DentalClininc_V2\Version_2\DashBoard_Soluation\DashBoard\bin\Debug\EntityFramework.dll
+E:\DentalClininc_V2\Version_2\DashBoard_Soluation\DashBoard\bin\Debug\EntityFramework.SqlServer.dll
+E:\DentalClininc_V2\Version_2\DashBoard_Soluation\DashBoard\bin\Debug\EntityFramework.xml
+E:\DentalClininc_V2\Version_2\DashBoard_Soluation\DashBoard\bin\Debug\EntityFramework.SqlServer.xml
+E:\DentalClininc_V2\Version_2\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.AssemblyReference.cache
+E:\DentalClininc_V2\Version_2\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Form1.resources
+E:\DentalClininc_V2\Version_2\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.DiagnosisForm.resources
+E:\DentalClininc_V2\Version_2\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.PatientForm.resources
+E:\DentalClininc_V2\Version_2\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.AppointmentForm.resources
+E:\DentalClininc_V2\Version_2\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Properties.Resources.resources
+E:\DentalClininc_V2\Version_2\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.GenerateResource.cache
+E:\DentalClininc_V2\Version_2\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.CoreCompileInputs.cache
+E:\DentalClininc_V2\Version_2\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.CopyComplete
+E:\DentalClininc_V2\Version_2\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.exe
+E:\DentalClininc_V2\Version_2\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.pdb
+E:\DentalClininc_V2\Version_2\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.FormForWriteDiagnosis.resources
+E:\DentalClininc_V2\Version_2\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.LoginForm.resources
+D:\desktop\Project_DisktopTop_29_9_2023\New folder (2)\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\bin\Debug\DashBoard.exe.config
+D:\desktop\Project_DisktopTop_29_9_2023\New folder (2)\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\bin\Debug\DashBoard.exe
+D:\desktop\Project_DisktopTop_29_9_2023\New folder (2)\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\bin\Debug\DashBoard.pdb
+D:\desktop\Project_DisktopTop_29_9_2023\New folder (2)\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\bin\Debug\EntityFramework.dll
+D:\desktop\Project_DisktopTop_29_9_2023\New folder (2)\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\bin\Debug\EntityFramework.SqlServer.dll
+D:\desktop\Project_DisktopTop_29_9_2023\New folder (2)\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\bin\Debug\EntityFramework.xml
+D:\desktop\Project_DisktopTop_29_9_2023\New folder (2)\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\bin\Debug\EntityFramework.SqlServer.xml
+D:\desktop\Project_DisktopTop_29_9_2023\New folder (2)\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.AssemblyReference.cache
+D:\desktop\Project_DisktopTop_29_9_2023\New folder (2)\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.SuggestedBindingRedirects.cache
+D:\desktop\Project_DisktopTop_29_9_2023\New folder (2)\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Form1.resources
+D:\desktop\Project_DisktopTop_29_9_2023\New folder (2)\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.DiagnosisForm.resources
+D:\desktop\Project_DisktopTop_29_9_2023\New folder (2)\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.FormForWriteDiagnosis.resources
+D:\desktop\Project_DisktopTop_29_9_2023\New folder (2)\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.LoginForm.resources
+D:\desktop\Project_DisktopTop_29_9_2023\New folder (2)\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.PatientForm.resources
+D:\desktop\Project_DisktopTop_29_9_2023\New folder (2)\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.AppointmentForm.resources
+D:\desktop\Project_DisktopTop_29_9_2023\New folder (2)\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Properties.Resources.resources
+D:\desktop\Project_DisktopTop_29_9_2023\New folder (2)\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.GenerateResource.cache
+D:\desktop\Project_DisktopTop_29_9_2023\New folder (2)\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.CoreCompileInputs.cache
+D:\desktop\Project_DisktopTop_29_9_2023\New folder (2)\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.CopyComplete
+D:\desktop\Project_DisktopTop_29_9_2023\New folder (2)\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.exe
+D:\desktop\Project_DisktopTop_29_9_2023\New folder (2)\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.pdb
+E:\DentalClininc_V2\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\bin\Debug\DashBoard.exe.config
+E:\DentalClininc_V2\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\bin\Debug\DashBoard.exe
+E:\DentalClininc_V2\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\bin\Debug\DashBoard.pdb
+E:\DentalClininc_V2\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\bin\Debug\EntityFramework.dll
+E:\DentalClininc_V2\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\bin\Debug\EntityFramework.SqlServer.dll
+E:\DentalClininc_V2\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\bin\Debug\EntityFramework.xml
+E:\DentalClininc_V2\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\bin\Debug\EntityFramework.SqlServer.xml
+E:\DentalClininc_V2\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.AssemblyReference.cache
+E:\DentalClininc_V2\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Form1.resources
+E:\DentalClininc_V2\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.DiagnosisForm.resources
+E:\DentalClininc_V2\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.FormForWriteDiagnosis.resources
+E:\DentalClininc_V2\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.LoginForm.resources
+E:\DentalClininc_V2\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.PatientForm.resources
+E:\DentalClininc_V2\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.AppointmentForm.resources
+E:\DentalClininc_V2\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Properties.Resources.resources
+E:\DentalClininc_V2\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.GenerateResource.cache
+E:\DentalClininc_V2\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.CoreCompileInputs.cache
+E:\DentalClininc_V2\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.CopyComplete
+E:\DentalClininc_V2\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.exe
+E:\DentalClininc_V2\Version_2-7-10-2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.pdb
+E:\DentalClininc_V2\Version_2-7-10-2023_Version_4\DashBoard_Soluation\DashBoard\bin\Debug\DashBoard.exe.config
+E:\DentalClininc_V2\Version_2-7-10-2023_Version_4\DashBoard_Soluation\DashBoard\bin\Debug\DashBoard.exe
+E:\DentalClininc_V2\Version_2-7-10-2023_Version_4\DashBoard_Soluation\DashBoard\bin\Debug\DashBoard.pdb
+E:\DentalClininc_V2\Version_2-7-10-2023_Version_4\DashBoard_Soluation\DashBoard\bin\Debug\EntityFramework.dll
+E:\DentalClininc_V2\Version_2-7-10-2023_Version_4\DashBoard_Soluation\DashBoard\bin\Debug\EntityFramework.SqlServer.dll
+E:\DentalClininc_V2\Version_2-7-10-2023_Version_4\DashBoard_Soluation\DashBoard\bin\Debug\EntityFramework.xml
+E:\DentalClininc_V2\Version_2-7-10-2023_Version_4\DashBoard_Soluation\DashBoard\bin\Debug\EntityFramework.SqlServer.xml
+E:\DentalClininc_V2\Version_2-7-10-2023_Version_4\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.AssemblyReference.cache
+E:\DentalClininc_V2\Version_2-7-10-2023_Version_4\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Form1.resources
+E:\DentalClininc_V2\Version_2-7-10-2023_Version_4\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.DiagnosisForm.resources
+E:\DentalClininc_V2\Version_2-7-10-2023_Version_4\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.FormForWriteDiagnosis.resources
+E:\DentalClininc_V2\Version_2-7-10-2023_Version_4\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.LoginForm.resources
+E:\DentalClininc_V2\Version_2-7-10-2023_Version_4\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.PatientForm.resources
+E:\DentalClininc_V2\Version_2-7-10-2023_Version_4\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.AppointmentForm.resources
+E:\DentalClininc_V2\Version_2-7-10-2023_Version_4\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Properties.Resources.resources
+E:\DentalClininc_V2\Version_2-7-10-2023_Version_4\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.GenerateResource.cache
+E:\DentalClininc_V2\Version_2-7-10-2023_Version_4\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.CoreCompileInputs.cache
+E:\DentalClininc_V2\Version_2-7-10-2023_Version_4\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.CopyComplete
+E:\DentalClininc_V2\Version_2-7-10-2023_Version_4\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.exe
+E:\DentalClininc_V2\Version_2-7-10-2023_Version_4\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.pdb
+E:\DentalClininc_V2\Version_2-7-10-2023_Version_4\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.TeethForm.resources
+E:\DentalClininc_V2\Version_5_10_10_2023\DashBoard_Soluation\DashBoard\bin\Debug\DashBoard.exe.config
+E:\DentalClininc_V2\Version_5_10_10_2023\DashBoard_Soluation\DashBoard\bin\Debug\DashBoard.exe
+E:\DentalClininc_V2\Version_5_10_10_2023\DashBoard_Soluation\DashBoard\bin\Debug\DashBoard.pdb
+E:\DentalClininc_V2\Version_5_10_10_2023\DashBoard_Soluation\DashBoard\bin\Debug\EntityFramework.dll
+E:\DentalClininc_V2\Version_5_10_10_2023\DashBoard_Soluation\DashBoard\bin\Debug\EntityFramework.SqlServer.dll
+E:\DentalClininc_V2\Version_5_10_10_2023\DashBoard_Soluation\DashBoard\bin\Debug\EntityFramework.xml
+E:\DentalClininc_V2\Version_5_10_10_2023\DashBoard_Soluation\DashBoard\bin\Debug\EntityFramework.SqlServer.xml
+E:\DentalClininc_V2\Version_5_10_10_2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.AssemblyReference.cache
+E:\DentalClininc_V2\Version_5_10_10_2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Form1.resources
+E:\DentalClininc_V2\Version_5_10_10_2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.DiagnosisForm.resources
+E:\DentalClininc_V2\Version_5_10_10_2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.FormForWriteDiagnosis.resources
+E:\DentalClininc_V2\Version_5_10_10_2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.LoginForm.resources
+E:\DentalClininc_V2\Version_5_10_10_2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.PatientForm.resources
+E:\DentalClininc_V2\Version_5_10_10_2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.AppointmentForm.resources
+E:\DentalClininc_V2\Version_5_10_10_2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.TeethForm.resources
+E:\DentalClininc_V2\Version_5_10_10_2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Properties.Resources.resources
+E:\DentalClininc_V2\Version_5_10_10_2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.GenerateResource.cache
+E:\DentalClininc_V2\Version_5_10_10_2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.CoreCompileInputs.cache
+E:\DentalClininc_V2\Version_5_10_10_2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.CopyComplete
+E:\DentalClininc_V2\Version_5_10_10_2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.exe
+E:\DentalClininc_V2\Version_5_10_10_2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.pdb
+E:\DentalClininc_V2\Version_5_10_10_2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.DiagnosisToothForPatient.resources
+F:\ITI Full Stack 2023\Advanced C#\Ptoject_Advanced\Version_5_Modified_10_10_2023\DashBoard_Soluation\DashBoard\bin\Debug\DashBoard.exe.config
+F:\ITI Full Stack 2023\Advanced C#\Ptoject_Advanced\Version_5_Modified_10_10_2023\DashBoard_Soluation\DashBoard\bin\Debug\DashBoard.exe
+F:\ITI Full Stack 2023\Advanced C#\Ptoject_Advanced\Version_5_Modified_10_10_2023\DashBoard_Soluation\DashBoard\bin\Debug\DashBoard.pdb
+F:\ITI Full Stack 2023\Advanced C#\Ptoject_Advanced\Version_5_Modified_10_10_2023\DashBoard_Soluation\DashBoard\bin\Debug\EntityFramework.dll
+F:\ITI Full Stack 2023\Advanced C#\Ptoject_Advanced\Version_5_Modified_10_10_2023\DashBoard_Soluation\DashBoard\bin\Debug\EntityFramework.SqlServer.dll
+F:\ITI Full Stack 2023\Advanced C#\Ptoject_Advanced\Version_5_Modified_10_10_2023\DashBoard_Soluation\DashBoard\bin\Debug\EntityFramework.xml
+F:\ITI Full Stack 2023\Advanced C#\Ptoject_Advanced\Version_5_Modified_10_10_2023\DashBoard_Soluation\DashBoard\bin\Debug\EntityFramework.SqlServer.xml
+F:\ITI Full Stack 2023\Advanced C#\Ptoject_Advanced\Version_5_Modified_10_10_2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.AssemblyReference.cache
+F:\ITI Full Stack 2023\Advanced C#\Ptoject_Advanced\Version_5_Modified_10_10_2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Form1.resources
+F:\ITI Full Stack 2023\Advanced C#\Ptoject_Advanced\Version_5_Modified_10_10_2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.DiagnosisForm.resources
+F:\ITI Full Stack 2023\Advanced C#\Ptoject_Advanced\Version_5_Modified_10_10_2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.DiagnosisToothForPatient.resources
+F:\ITI Full Stack 2023\Advanced C#\Ptoject_Advanced\Version_5_Modified_10_10_2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.FormForWriteDiagnosis.resources
+F:\ITI Full Stack 2023\Advanced C#\Ptoject_Advanced\Version_5_Modified_10_10_2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.LoginForm.resources
+F:\ITI Full Stack 2023\Advanced C#\Ptoject_Advanced\Version_5_Modified_10_10_2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.PatientForm.resources
+F:\ITI Full Stack 2023\Advanced C#\Ptoject_Advanced\Version_5_Modified_10_10_2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.AppointmentForm.resources
+F:\ITI Full Stack 2023\Advanced C#\Ptoject_Advanced\Version_5_Modified_10_10_2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Forms_Content.TeethForm.resources
+F:\ITI Full Stack 2023\Advanced C#\Ptoject_Advanced\Version_5_Modified_10_10_2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.Properties.Resources.resources
+F:\ITI Full Stack 2023\Advanced C#\Ptoject_Advanced\Version_5_Modified_10_10_2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.GenerateResource.cache
+F:\ITI Full Stack 2023\Advanced C#\Ptoject_Advanced\Version_5_Modified_10_10_2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.CoreCompileInputs.cache
+F:\ITI Full Stack 2023\Advanced C#\Ptoject_Advanced\Version_5_Modified_10_10_2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.csproj.CopyComplete
+F:\ITI Full Stack 2023\Advanced C#\Ptoject_Advanced\Version_5_Modified_10_10_2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.exe
+F:\ITI Full Stack 2023\Advanced C#\Ptoject_Advanced\Version_5_Modified_10_10_2023\DashBoard_Soluation\DashBoard\obj\Debug\DashBoard.pdb
